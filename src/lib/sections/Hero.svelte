@@ -5,7 +5,7 @@
   const summary = $derived(data?.summary || '');
 
   function toResume() {
-    window.open('/Vigyat_Resume.pdf', '_blank', 'noopener');
+    window.open('Vigyat_Resume.pdf', '_blank', 'noopener');
   }
 </script>
 
