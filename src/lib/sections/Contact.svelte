@@ -89,7 +89,7 @@
   .status.success { background: color-mix(in oklab, green 20%, transparent); color: green; border: 1px solid green; }
   .status.error { background: color-mix(in oklab, red 20%, transparent); color: red; border: 1px solid red; }
 
-  :global(.section .section-description) {
+  :global(#contact .section-description) {
     text-align: center;
   }
 </style>

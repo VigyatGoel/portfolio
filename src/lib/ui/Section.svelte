@@ -30,7 +30,7 @@
   .section-description {
     font-size: clamp(0.9rem, 2vw, 1.1rem);
     color: var(--muted);
-    text-align:justify;
+    text-align: justify;
     margin: 0 auto 2rem auto;
     max-width: 100ch;
     line-height: 1.6;
