@@ -1,5 +1,7 @@
 <script>
   const { data } = $props();
+  import githubIcon from '/svg/GitHub.svg';
+  import linkedinIcon from '/svg/LinkedIn.svg';
   const sections = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
@@ -52,11 +54,11 @@
       {#each links as l}
         {#if /github\.com/i.test(l.url)}
           <a class="icon" href={l.url} target="_blank" rel="noreferrer noopener" aria-label="GitHub">
-            <img src="/svg/GitHub.svg" alt="GitHub" width="24" height="24" />
+            <img src={githubIcon} alt="GitHub" width="24" height="24" />
           </a>
         {:else if /linkedin\.com/i.test(l.url)}
           <a class="icon" href={l.url} target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">
-            <img src="/svg/LinkedIn.svg" alt="LinkedIn" width="24" height="24" />
+            <img src={linkedinIcon} alt="LinkedIn" width="24" height="24" />
           </a>
         {/if}
       {/each}

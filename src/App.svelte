@@ -102,7 +102,13 @@
         details: 'Vivekanand School, Delhi\nPercentage: 90.4%',
         dateText: '2022'
       }
-    ]
+    ],
+    contact: {
+      links: [
+        { url: 'https://github.com/VigyatGoel' },
+        { url: 'https://www.linkedin.com/in/vigyatgoel/' }
+      ]
+    }
   });
 
   // Force dark mode always
