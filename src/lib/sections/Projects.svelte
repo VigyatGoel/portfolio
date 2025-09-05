@@ -11,7 +11,15 @@
       <Reveal as="div" direction="up" delay={i * 40}>
         <article class="card card-hover">
           <div class="card-head">
-            <h3>{p.name}</h3>
+            <h3>
+              {#if p.website || p.github}
+                <a href={p.website || p.github} target="_blank" rel="noopener noreferrer" class="project-title-link">
+                  {p.name}
+                </a>
+              {:else}
+                {p.name}
+              {/if}
+            </h3>
             <div class="card-actions">
               {#if p.website}
                 <a href={p.website} target="_blank" rel="noopener noreferrer" class="website-link" aria-label="Visit website">
@@ -54,6 +62,14 @@
 
   .card-head { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: .5rem; }
   h3 { margin: 0; font-size: 1.05rem; }
+  .project-title-link { 
+    color: inherit; 
+    text-decoration: none; 
+    transition: color .2s ease; 
+  }
+  .project-title-link:hover { 
+    color: var(--accent); 
+  }
   .card-actions { display: flex; align-items: center; gap: 0.5rem; }
   .website-link,
   .github-link { 
@@ -71,8 +87,45 @@
     background: var(--hover); 
   }
 
-  .desc { color: var(--muted); margin: 0; display: -webkit-box; -webkit-line-clamp: 4; line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .desc { color: var(--fg); margin: 0; display: -webkit-box; -webkit-line-clamp: 4; line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
   .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: auto; }
   .tag { background: var(--hover); border: 1px solid color-mix(in oklab, var(--accent) 25%, var(--border)); border-radius: 999px; padding: 0.25rem 0.6rem; font-size: 0.85rem; }
 
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .card { 
+      padding: 1.5rem; 
+      min-height: auto; 
+    }
+    .card-head { 
+      grid-template-columns: 1fr; 
+      gap: 1rem; 
+      text-align: center; 
+    }
+    .card-actions { 
+      justify-content: center; 
+    }
+    h3 { 
+      font-size: 1.2rem; 
+    }
+    .desc { 
+      -webkit-line-clamp: unset; 
+      line-clamp: unset; 
+      display: block;
+      text-align: justify; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card { 
+      padding: 1rem; 
+    }
+    .tags { 
+      gap: 0.375rem; 
+    }
+    .tag { 
+      font-size: 0.8rem; 
+      padding: 0.2rem 0.5rem; 
+    }
+  }
 </style>

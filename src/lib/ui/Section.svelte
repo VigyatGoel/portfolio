@@ -36,4 +36,24 @@
     line-height: 1.6;
   }
   .section-body { display: grid; gap: 1rem; }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .section {
+      padding: clamp(1.5rem, 8vw, 3rem) 0;
+    }
+    .section-description {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .section {
+      padding: clamp(1.25rem, 10vw, 2.5rem) 0;
+    }
+    .section-description {
+      margin-bottom: 1.25rem;
+    }
+  }
 </style>

@@ -58,13 +58,13 @@
   @keyframes sheen { to { background-position: top, 0 0, 0 0; } from { background-position: bottom, 0 0, 0 0; } }
 
   .content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; text-align: center; padding: 0 1rem; }
-  .title { font-size: clamp(3rem, 8vw, 5rem); margin: 0 0 .25rem; letter-spacing: 0.3px; font-weight: 800; }
-  .hello { display: block; font-size: clamp(1.2rem, 3.5vw, 1.4rem); color: var(--muted-2); margin-bottom: .2rem; }
+  .title { font-size: clamp(2.5rem, 8vw, 5rem); margin: 0 0 .25rem; letter-spacing: 0.3px; font-weight: 800; }
+  .hello { display: block; font-size: clamp(1rem, 3.5vw, 1.4rem); color: var(--muted-2); margin-bottom: .2rem; }
   .grad { background: linear-gradient(92deg, var(--fg), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 18px color-mix(in oklab, var(--accent) 25%, transparent)); }
   .anim-grad { background-size: 200% 200%; animation: pan 6s ease-in-out infinite; }
   @keyframes pan { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
 
-  .subtitle { color: var(--muted); font-size: clamp(1.3rem, 3vw, 1rem); margin: .2rem auto 0; max-width: 65ch; text-align: justify; line-height: 1.7; }
+  .subtitle { color: var(--muted); font-size: clamp(1rem, 3vw, 1.2rem); margin: .2rem auto 0; max-width: 65ch; text-align: justify; line-height: 1.7; }
   .actions { margin-top: 2rem; display: flex; justify-content: center; }
   .secondary { 
     background: color-mix(in oklab, var(--accent) 12%, transparent); 

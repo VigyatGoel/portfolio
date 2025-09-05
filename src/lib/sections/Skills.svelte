@@ -97,12 +97,31 @@
   @media (max-width: 768px) {
     .skill-grid {
       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+    .skill-category {
+      padding: 1.25rem;
     }
   }
 
   @media (max-width: 480px) {
     .skill-grid {
       grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 0.75rem;
+    }
+    .skill-category {
+      padding: 1rem;
+    }
+    .skill-card {
+      padding: 0.75rem;
+    }
+    .skill-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 0.75rem;
+    }
+    .skill-name {
+      font-size: 0.85rem;
     }
   }
 </style>

@@ -80,4 +80,44 @@
   @media (min-width: 780px) {
     .card { padding: 1.75rem 1.5rem; }
   }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .title-row { 
+      grid-template-columns: 1fr; 
+      gap: 0.5rem; 
+    }
+    .date { 
+      justify-self: start; 
+      white-space: normal; 
+    }
+    .card { 
+      padding: 1.25rem; 
+    }
+    .meta { 
+      flex-wrap: wrap; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card { 
+      padding: 1rem; 
+    }
+    h3 { 
+      font-size: 1rem; 
+    }
+    .bullets { 
+      padding-left: 1rem; 
+    }
+    .bullets li { 
+      font-size: 0.9rem; 
+    }
+    .tags { 
+      gap: 0.375rem; 
+    }
+    .tag { 
+      font-size: 0.8rem; 
+      padding: 0.2rem 0.5rem; 
+    }
+  }
 </style>

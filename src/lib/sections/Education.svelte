@@ -83,4 +83,31 @@
   @media (min-width: 780px) {
     .card { padding: 1.75rem 1.5rem; }
   }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .title-row { 
+      grid-template-columns: 1fr; 
+      gap: 0.5rem; 
+    }
+    .date { 
+      justify-self: start; 
+      white-space: normal; 
+    }
+    .card { 
+      padding: 1.25rem; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card { 
+      padding: 1rem; 
+    }
+    h3 { 
+      font-size: 1rem; 
+    }
+    .details { 
+      font-size: 0.9rem; 
+    }
+  }
 </style>

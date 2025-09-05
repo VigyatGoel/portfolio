@@ -92,4 +92,23 @@
   :global(#contact .section-description) {
     text-align: center;
   }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .contact-form { 
+      width: 100%; 
+    }
+    .card { 
+      padding: 1.5rem; 
+    }
+    input, textarea { 
+      font-size: 16px; /* Prevents zoom on iOS */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card { 
+      padding: 1rem; 
+    }
+  }
 </style>

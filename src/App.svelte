@@ -150,4 +150,17 @@
     margin: 0;
   }
   .container { max-width: 1100px; margin: 0 auto; padding: 0 var(--container-x); }
+
+  /* Mobile improvements */
+  @media (max-width: 768px) {
+    :global(:root) {
+      --container-x: clamp(1rem, 4vw, 1.5rem);
+    }
+  }
+
+  @media (max-width: 480px) {
+    :global(:root) {
+      --container-x: 1rem;
+    }
+  }
 </style>
