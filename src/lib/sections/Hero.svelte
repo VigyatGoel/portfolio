@@ -42,7 +42,7 @@
   }
   /* Top glow */
   .bg-accents::before {
-    background: radial-gradient(60% 50% at 50% 0%, color-mix(in oklab, var(--accent) 22%, transparent) 0%, transparent 70%);
+    background: radial-gradient(40% 50% at 50% 0%, color-mix(in oklab, var(--accent) 22%, transparent) 0%, transparent 70%);
     filter: blur(18px);
     opacity: 0.9;
     transform: translateZ(0);

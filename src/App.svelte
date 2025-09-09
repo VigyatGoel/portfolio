@@ -119,8 +119,8 @@
 </script>
 
 <Navbar {data} />
+<Hero {data} />
 <div class="container">
-  <Hero {data} />
   <About {data} />
   <Education {data} />
   <Experience {data} />
